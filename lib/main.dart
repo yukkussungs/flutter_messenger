@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_messenger/screens/contacts.dart';
+import 'package:flutter_messenger/screens/signIn.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,9 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        scaffoldBackgroundColor: Color(0xff1F1F1F),
         primarySwatch: Colors.blue,
       ),
-      home: ContactsScreen(),
+      home: SignIn(),
+      // home: ContactsScreen(),
     );
   }
 }
